@@ -1,0 +1,4 @@
+# ignore .tsv files
+*.tsv
+*.json
+

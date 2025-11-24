@@ -1,0 +1,215 @@
+    1  sudo apt update -qq
+    2  sudo apt install --no-install-recommends software-properties-common dirmngr
+    3  wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
+    4  sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
+    5  sudo apt install --no-install-recommends r-base
+    6  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    7  bash ~/Miniconda3-latest-Linux-x86_64.sh
+    8  source ~/.bashrc
+    9  conda --version
+   10  conda create -c conda-forge -n ds-env spyder numpy scipy pandas matplotlib sympy cython jupyter
+   11  conda activate ds-env
+   12  conda config --env --add channels conda-forge
+   13  conda config --env --set channel_priority strict
+   14  conda install conda-forge::r-irkernel
+   15  conda install -c conda-forge jupyterlab
+   16  jupyter lab
+   17  conda deactivate
+   18  sudo apt update
+   19  sudo kernelstub -a mem_sleep_default=deep 
+   20  sudo apt update
+   21  sudo apt upgrade
+   22  sudo systemctl stop system76-power
+   23  sudo systemctl disable system76-power
+   24  conda activate ds-env
+   25  jupyter notebook
+   26  conda deactivate
+   27  sudo apt update
+   28  sudo apt install texlive-full
+   29  latex --version
+   30  sudo apt-get purge texlive-full
+   31  cd /home/manja/Downloads/Style_and_Template_for_Preprints__arXiv__bio_arXiv_
+   32  cd 
+   33  cd /home/manja/Downloads/Style_and_Template_for_Preprints__arXiv__bio_arXiv_
+   34  cd 
+   35  cd /home/manja/Downloads/Style_and_Template_for_Preprints__arXiv__bio_arXiv_
+   36  sudo apt-get purge texlive*
+   37  sudo dpkg --configure -a
+   38  git config --global user.name "manjago85"
+   39  git config --global user.email "manjago@gmail.com"
+   40  git config --global --list
+   41  sudo apt-get install libcurl4-openssl-dev
+   42  sudo apt update
+   43  sudo apt install gfortran
+   44  conda activate ds-env
+   45  jupyter notebook
+   46  conda activate ds-env
+   47  jupyter notebook
+   48  conda activate ds-env
+   49  jupyter notebook
+   50  conda install -c conda-forge r-tidyverse
+   51  jupyter notebook
+   52  wget -r --no-parent --reject "index.html*" https://data.ceda.ac.uk/badc/ukmo-midas-open/data/uk-daily-temperature-obs/dataset-version-202107
+   53  wget -r --reject "index.html*" https://data.ceda.ac.uk/badc/ukmo-midas-open/data/uk-daily-temperature-obs/dataset-version-202107
+   54  wget -r --no-parent --reject "index.html*" https://data.ceda.ac.uk/badc/ukmo-midas-open/data/uk-daily-temperature-obs/dataset-version-202107/down/01454_lisburn-friends-school/qc-version-1
+   55  wget -r --no-parent --reject "index.html*" -e robots=off https://data.ceda.ac.uk/badc/ukmo-midas-open/data/uk-daily-temperature-obs/dataset-version-202107/down/01454_lisburn-friends-school/qc-version-1
+   56  wget -r -np -nH --cit-dirs=7 https://data.ceda.ac.uk/badc/ukmo-midas-open/data/uk-daily-temperature-obs/dataset-version-202107/down/01454_lisburn-friends-school/qc-version-1
+   57  wget -r -np -nH --cut-dirs=7 https://data.ceda.ac.uk/badc/ukmo-midas-open/data/uk-daily-temperature-obs/dataset-version-202107/down/01454_lisburn-friends-school/qc-version-1
+   58  wget -r -np -nH --cut-dirs=7 -e robot=off https://data.ceda.ac.uk/badc/ukmo-midas-open/data/uk-daily-temperature-obs/dataset-version-202107/down/01454_lisburn-friends-school/qc-version-1
+   59  wget -r -np -nH --cut-dirs=7 -e robots=off https://data.ceda.ac.uk/badc/ukmo-midas-open/data/uk-daily-temperature-obs/dataset-version-202107/down/01454_lisburn-friends-school/qc-version-1
+   60  wget --load-cookies /home/manja/Downloads.cookies.txt https://data.ceda.ac.uk/badc/ukmo-midas-open/data/uk-daily-temperature-obs/dataset-version-202107/antrim/01446_ballymoney/qc-version-1
+   61  wget --load-cookies /home/manja/Downloads/cookies.txt https://data.ceda.ac.uk/badc/ukmo-midas-open/data/uk-daily-temperature-obs/dataset-version-202107/antrim/01446_ballymoney/qc-version-1
+   62  cd home
+   63  cd /home
+   64  ls
+   65  cd \home\manja
+   66  cd /home/manja
+   67  ls
+   68  sudo rm -rf data.ceda.ac.uk 
+   69  killall wget
+   70  wget -i /home/manja/Downloads/download-file-list.txt
+   71  cd /home/manja
+   72  ls
+   73  cd /home/manja/Downloads
+   74  wget -i download-file-list.txt
+   75  ls
+   76  wget -i download-file-list.txt
+   77  sudo apt install pavucontrol
+   78  cd ~
+   79  sudo apt-get update
+   80  sudo apt-get install libgdal-dev
+   81  sudo apt-get update
+   82  sudo apt-get install libudunits2-dev
+   83  sudo apt-get install libgdal-dev libgeos-dev libproj-dev
+   84  sudo apt-get install libgdal-dev libgeos-dev libproj-dev libudunits2-dev
+   85  sudo apt-get install gcc-fortran
+   86  sudo aptitude install libgdal-dev
+   87  sudo apt-get update
+   88  sudo apt-get install -y     libudunits2-dev     libgdal-dev     libgeos-dev     libproj-dev
+   89  sudo apt-get install cmake
+   90  wget -e robots=off --mirror --no-parent -r https://dap.ceda.ac.uk/badc/ukmo-midas-open/data/uk-daily-temperature-obs/dataset-version-202107/antrim/ --header "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZjhmaUpyaUtDY3hmaHhzdU5vazVEekdJdFZ4amhhTWNJa05ZX2U4MnhJIn0.eyJleHAiOjE3NjEwMDM1MDgsImlhdCI6MTc2MDc0NDMwOCwianRpIjoiOWNkOWY0OTYtZTMwMy00NjQwLThmNGQtNDU1YjQ3YmFiMzk4IiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50cy5jZWRhLmFjLnVrL3JlYWxtcy9jZWRhIiwic3ViIjoiZmFlMThlNmItZTliZC00MzIyLWIzY2UtZDg5ZDM1YjQyZjdiIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoic2VydmljZXMtcG9ydGFsLWNlZGEtYWMtdWsiLCJzZXNzaW9uX3N0YXRlIjoiNjkxZTkxNmMtY2MzYy00ZDdhLWI5N2EtMDJhMjg1ZTE1ZjI0IiwiYWNyIjoiMSIsInNjb3BlIjoiZW1haWwgb3BlbmlkIHByb2ZpbGUgZ3JvdXBfbWVtYmVyc2hpcCIsInNpZCI6IjY5MWU5MTZjLWNjM2MtNGQ3YS1iOTdhLTAyYTI4NWUxNWYyNCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiTUFSSU8gR09NRVoiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJtYW5qYWdvIiwiZ2l2ZW5fbmFtZSI6Ik1BUklPIiwiZmFtaWx5X25hbWUiOiJHT01FWiIsImVtYWlsIjoibWFuamFnb0BnbWFpbC5jb20ifQ.mO6No6y9yOlDHYYLTVxMFq-ViGXTygnys-j8hAdU8u6aIUWonoD-djFRCOPQToB7lTHgPq7vdDU8fydCocSw6THDa0xG0d3aCVidquAF7QUCnJJ3OBRT2oIwIoBs7acfhpShw5A-w40mo2Zy7iSSXmF4LxVWy932izDbdzD1JgM4lkdFp-LZA5uhs9vpD1Aarrx-Pnw7wKoml2CG96uXrMCFGyS6xBARpeKTKiW4gNVQFTC6Llc__H8wNie3SeaP69yougxMtpnU8wg7t_LpC6hUswWWv3typRZH0uCTDMDt648Vg40uiZ1_07L2-ak9gOyJc4hkXTLOSqdbZ2wxtA"
+   91  wget -e robots=off --mirror --no-parent -r https://dap.ceda.ac.uk/badc/ukmo-midas-open/data/uk-daily-temperature-obs/dataset-version-202107/armagh/ --header "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZjhmaUpyaUtDY3hmaHhzdU5vazVEekdJdFZ4amhhTWNJa05ZX2U4MnhJIn0.eyJleHAiOjE3NjEwMDM1MDgsImlhdCI6MTc2MDc0NDMwOCwianRpIjoiOWNkOWY0OTYtZTMwMy00NjQwLThmNGQtNDU1YjQ3YmFiMzk4IiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50cy5jZWRhLmFjLnVrL3JlYWxtcy9jZWRhIiwic3ViIjoiZmFlMThlNmItZTliZC00MzIyLWIzY2UtZDg5ZDM1YjQyZjdiIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoic2VydmljZXMtcG9ydGFsLWNlZGEtYWMtdWsiLCJzZXNzaW9uX3N0YXRlIjoiNjkxZTkxNmMtY2MzYy00ZDdhLWI5N2EtMDJhMjg1ZTE1ZjI0IiwiYWNyIjoiMSIsInNjb3BlIjoiZW1haWwgb3BlbmlkIHByb2ZpbGUgZ3JvdXBfbWVtYmVyc2hpcCIsInNpZCI6IjY5MWU5MTZjLWNjM2MtNGQ3YS1iOTdhLTAyYTI4NWUxNWYyNCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiTUFSSU8gR09NRVoiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJtYW5qYWdvIiwiZ2l2ZW5fbmFtZSI6Ik1BUklPIiwiZmFtaWx5X25hbWUiOiJHT01FWiIsImVtYWlsIjoibWFuamFnb0BnbWFpbC5jb20ifQ.mO6No6y9yOlDHYYLTVxMFq-ViGXTygnys-j8hAdU8u6aIUWonoD-djFRCOPQToB7lTHgPq7vdDU8fydCocSw6THDa0xG0d3aCVidquAF7QUCnJJ3OBRT2oIwIoBs7acfhpShw5A-w40mo2Zy7iSSXmF4LxVWy932izDbdzD1JgM4lkdFp-LZA5uhs9vpD1Aarrx-Pnw7wKoml2CG96uXrMCFGyS6xBARpeKTKiW4gNVQFTC6Llc__H8wNie3SeaP69yougxMtpnU8wg7t_LpC6hUswWWv3typRZH0uCTDMDt648Vg40uiZ1_07L2-ak9gOyJc4hkXTLOSqdbZ2wxtA"
+   92  wget -e robots=off --mirror --no-parent -r https://dap.ceda.ac.uk/badc/ukmo-midas-open/data/uk-daily-temperature-obs/dataset-version-202107/down/ --header "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZjhmaUpyaUtDY3hmaHhzdU5vazVEekdJdFZ4amhhTWNJa05ZX2U4MnhJIn0.eyJleHAiOjE3NjEwMDM1MDgsImlhdCI6MTc2MDc0NDMwOCwianRpIjoiOWNkOWY0OTYtZTMwMy00NjQwLThmNGQtNDU1YjQ3YmFiMzk4IiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50cy5jZWRhLmFjLnVrL3JlYWxtcy9jZWRhIiwic3ViIjoiZmFlMThlNmItZTliZC00MzIyLWIzY2UtZDg5ZDM1YjQyZjdiIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoic2VydmljZXMtcG9ydGFsLWNlZGEtYWMtdWsiLCJzZXNzaW9uX3N0YXRlIjoiNjkxZTkxNmMtY2MzYy00ZDdhLWI5N2EtMDJhMjg1ZTE1ZjI0IiwiYWNyIjoiMSIsInNjb3BlIjoiZW1haWwgb3BlbmlkIHByb2ZpbGUgZ3JvdXBfbWVtYmVyc2hpcCIsInNpZCI6IjY5MWU5MTZjLWNjM2MtNGQ3YS1iOTdhLTAyYTI4NWUxNWYyNCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiTUFSSU8gR09NRVoiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJtYW5qYWdvIiwiZ2l2ZW5fbmFtZSI6Ik1BUklPIiwiZmFtaWx5X25hbWUiOiJHT01FWiIsImVtYWlsIjoibWFuamFnb0BnbWFpbC5jb20ifQ.mO6No6y9yOlDHYYLTVxMFq-ViGXTygnys-j8hAdU8u6aIUWonoD-djFRCOPQToB7lTHgPq7vdDU8fydCocSw6THDa0xG0d3aCVidquAF7QUCnJJ3OBRT2oIwIoBs7acfhpShw5A-w40mo2Zy7iSSXmF4LxVWy932izDbdzD1JgM4lkdFp-LZA5uhs9vpD1Aarrx-Pnw7wKoml2CG96uXrMCFGyS6xBARpeKTKiW4gNVQFTC6Llc__H8wNie3SeaP69yougxMtpnU8wg7t_LpC6hUswWWv3typRZH0uCTDMDt648Vg40uiZ1_07L2-ak9gOyJc4hkXTLOSqdbZ2wxtA"
+   93  wget -e robots=off --mirror --no-parent -r https://dap.ceda.ac.uk/badc/ukmo-midas-open/data/uk-daily-temperature-obs/dataset-version-202107/fermanagh/ --header "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZjhmaUpyaUtDY3hmaHhzdU5vazVEekdJdFZ4amhhTWNJa05ZX2U4MnhJIn0.eyJleHAiOjE3NjEwMDM1MDgsImlhdCI6MTc2MDc0NDMwOCwianRpIjoiOWNkOWY0OTYtZTMwMy00NjQwLThmNGQtNDU1YjQ3YmFiMzk4IiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50cy5jZWRhLmFjLnVrL3JlYWxtcy9jZWRhIiwic3ViIjoiZmFlMThlNmItZTliZC00MzIyLWIzY2UtZDg5ZDM1YjQyZjdiIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoic2VydmljZXMtcG9ydGFsLWNlZGEtYWMtdWsiLCJzZXNzaW9uX3N0YXRlIjoiNjkxZTkxNmMtY2MzYy00ZDdhLWI5N2EtMDJhMjg1ZTE1ZjI0IiwiYWNyIjoiMSIsInNjb3BlIjoiZW1haWwgb3BlbmlkIHByb2ZpbGUgZ3JvdXBfbWVtYmVyc2hpcCIsInNpZCI6IjY5MWU5MTZjLWNjM2MtNGQ3YS1iOTdhLTAyYTI4NWUxNWYyNCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiTUFSSU8gR09NRVoiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJtYW5qYWdvIiwiZ2l2ZW5fbmFtZSI6Ik1BUklPIiwiZmFtaWx5X25hbWUiOiJHT01FWiIsImVtYWlsIjoibWFuamFnb0BnbWFpbC5jb20ifQ.mO6No6y9yOlDHYYLTVxMFq-ViGXTygnys-j8hAdU8u6aIUWonoD-djFRCOPQToB7lTHgPq7vdDU8fydCocSw6THDa0xG0d3aCVidquAF7QUCnJJ3OBRT2oIwIoBs7acfhpShw5A-w40mo2Zy7iSSXmF4LxVWy932izDbdzD1JgM4lkdFp-LZA5uhs9vpD1Aarrx-Pnw7wKoml2CG96uXrMCFGyS6xBARpeKTKiW4gNVQFTC6Llc__H8wNie3SeaP69yougxMtpnU8wg7t_LpC6hUswWWv3typRZH0uCTDMDt648Vg40uiZ1_07L2-ak9gOyJc4hkXTLOSqdbZ2wxtA"
+   94  wget -e robots=off --mirror --no-parent -r https://dap.ceda.ac.uk/badc/ukmo-midas-open/data/uk-daily-temperature-obs/dataset-version-202107/londonderry/ --header "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZjhmaUpyaUtDY3hmaHhzdU5vazVEekdJdFZ4amhhTWNJa05ZX2U4MnhJIn0.eyJleHAiOjE3NjEwMDM1MDgsImlhdCI6MTc2MDc0NDMwOCwianRpIjoiOWNkOWY0OTYtZTMwMy00NjQwLThmNGQtNDU1YjQ3YmFiMzk4IiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50cy5jZWRhLmFjLnVrL3JlYWxtcy9jZWRhIiwic3ViIjoiZmFlMThlNmItZTliZC00MzIyLWIzY2UtZDg5ZDM1YjQyZjdiIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoic2VydmljZXMtcG9ydGFsLWNlZGEtYWMtdWsiLCJzZXNzaW9uX3N0YXRlIjoiNjkxZTkxNmMtY2MzYy00ZDdhLWI5N2EtMDJhMjg1ZTE1ZjI0IiwiYWNyIjoiMSIsInNjb3BlIjoiZW1haWwgb3BlbmlkIHByb2ZpbGUgZ3JvdXBfbWVtYmVyc2hpcCIsInNpZCI6IjY5MWU5MTZjLWNjM2MtNGQ3YS1iOTdhLTAyYTI4NWUxNWYyNCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiTUFSSU8gR09NRVoiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJtYW5qYWdvIiwiZ2l2ZW5fbmFtZSI6Ik1BUklPIiwiZmFtaWx5X25hbWUiOiJHT01FWiIsImVtYWlsIjoibWFuamFnb0BnbWFpbC5jb20ifQ.mO6No6y9yOlDHYYLTVxMFq-ViGXTygnys-j8hAdU8u6aIUWonoD-djFRCOPQToB7lTHgPq7vdDU8fydCocSw6THDa0xG0d3aCVidquAF7QUCnJJ3OBRT2oIwIoBs7acfhpShw5A-w40mo2Zy7iSSXmF4LxVWy932izDbdzD1JgM4lkdFp-LZA5uhs9vpD1Aarrx-Pnw7wKoml2CG96uXrMCFGyS6xBARpeKTKiW4gNVQFTC6Llc__H8wNie3SeaP69yougxMtpnU8wg7t_LpC6hUswWWv3typRZH0uCTDMDt648Vg40uiZ1_07L2-ak9gOyJc4hkXTLOSqdbZ2wxtA"
+   95  wget -e robots=off --mirror --no-parent -r https://dap.ceda.ac.uk/badc/ukmo-midas-open/data/uk-daily-temperature-obs/dataset-version-202107/tyrone/ --header "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZjhmaUpyaUtDY3hmaHhzdU5vazVEekdJdFZ4amhhTWNJa05ZX2U4MnhJIn0.eyJleHAiOjE3NjEwMDM1MDgsImlhdCI6MTc2MDc0NDMwOCwianRpIjoiOWNkOWY0OTYtZTMwMy00NjQwLThmNGQtNDU1YjQ3YmFiMzk4IiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50cy5jZWRhLmFjLnVrL3JlYWxtcy9jZWRhIiwic3ViIjoiZmFlMThlNmItZTliZC00MzIyLWIzY2UtZDg5ZDM1YjQyZjdiIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoic2VydmljZXMtcG9ydGFsLWNlZGEtYWMtdWsiLCJzZXNzaW9uX3N0YXRlIjoiNjkxZTkxNmMtY2MzYy00ZDdhLWI5N2EtMDJhMjg1ZTE1ZjI0IiwiYWNyIjoiMSIsInNjb3BlIjoiZW1haWwgb3BlbmlkIHByb2ZpbGUgZ3JvdXBfbWVtYmVyc2hpcCIsInNpZCI6IjY5MWU5MTZjLWNjM2MtNGQ3YS1iOTdhLTAyYTI4NWUxNWYyNCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiTUFSSU8gR09NRVoiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJtYW5qYWdvIiwiZ2l2ZW5fbmFtZSI6Ik1BUklPIiwiZmFtaWx5X25hbWUiOiJHT01FWiIsImVtYWlsIjoibWFuamFnb0BnbWFpbC5jb20ifQ.mO6No6y9yOlDHYYLTVxMFq-ViGXTygnys-j8hAdU8u6aIUWonoD-djFRCOPQToB7lTHgPq7vdDU8fydCocSw6THDa0xG0d3aCVidquAF7QUCnJJ3OBRT2oIwIoBs7acfhpShw5A-w40mo2Zy7iSSXmF4LxVWy932izDbdzD1JgM4lkdFp-LZA5uhs9vpD1Aarrx-Pnw7wKoml2CG96uXrMCFGyS6xBARpeKTKiW4gNVQFTC6Llc__H8wNie3SeaP69yougxMtpnU8wg7t_LpC6hUswWWv3typRZH0uCTDMDt648Vg40uiZ1_07L2-ak9gOyJc4hkXTLOSqdbZ2wxtA"
+   96  mkdir -p ~/all_qc1_files
+   97  find . -type d -name "qc-version-1" -exec cp -v {}/* ~/all_qc1_files/ \;
+   98  find . -type d -name "qc-version-1"
+   99  find . -type d -name "qc-version-1" -exec bash -c 'shopt -s nullglob; cp -v "$1"/* ~/all_qc1_files/' _ {} \;
+  100  make --version
+  101  systemctl --user restart wireplumber pipewire pipewire-pulse
+  102  rm -r ~/.config/pulse
+  103  pavucontrol
+  104  alsamixer
+  105  pavucontrol
+  106  alsamixer
+  107  arecord -1
+  108  sudo arecord -1
+  109  arecord -l
+  110  sudo nano /etc/modprobe.d/alsa-base.conf
+  111  sudo alsa force-reload
+  112  alsamixer
+  113  pavucontrol
+  114  arecord -l
+  115  sudo nano /etc/modprobe.d/alsa-base.conf
+  116  cd 
+  117  git remote -v
+  118  git remote remove origin
+  119  git init
+  120  git remote add origin https://github.com/manjago85/QP1_BC.git
+  121  git add .
+  122  git commit -m "Initial commit"
+  123  git branch -M main
+  124  git push -u origin main
+  125  git remote add origin https://github.com/manjago85/QP1_BC.git
+  126  git branch -M main
+  127  ssh-keygen -t ed25519 -C "manjago@gmail.com"
+  128  eval "$(ssh-agent -s)"
+  129  ssh-add ~/.ssh/id_ed25519
+  130  cat ~/.ssh/id_ed25519.pub
+  131  git remote set-url origin git@github.com:manjago85/QP1_BC.git
+  132  ssh -T git@github.com
+  133  git push -u origin main
+  134  git rm --cached data/processed/full_clim_data.csv
+  135  git commit -m "Remove full_clim_data.csv (too large) from repo"
+  136  git push origin main
+  137  java -jar bfg.jar --strip-blobs-bigger-than 100M
+  138  sudo apt install openjdk-11-jre-headless 
+  139  cd QP1_BC
+  140  rm -rf .git
+  141  git init
+  142  git add .
+  143  git commit -m "Initial commit"
+  144  git remote add origin https://github.com/manjago85/QP1_BC.git
+  145  git branch -M main
+  146  git push -u origin main
+  147  git remote add origin git@github.com:manjago85/QP1_BC.git
+  148  git push -u origin main
+  149  git remote -v
+  150  git remote set-url origin git@github.com:manjago85/QP1_BC.git
+  151  git remote -v
+  152  ssh -T git@github.com
+  153  ls -al ~/.ssh
+  154  git push -u origin main
+  155  git rm ~/output/bts_quant_reg_mod_2_num_quantiles_30.csv
+  156  git rm /output/bts_quant_reg_mod_2_num_quantiles_30.csv
+  157  cd /output
+  158  git rm ./output/bts_quant_reg_mod_2_num_quantiles_30.csv
+  159  git commit -m "Remove unnecessary files"
+  160  git push
+  161  git push --force-with-lease origin main
+  162  git config pull.rebase false
+  163  git checkout main
+  164  git fetch origin
+  165  git rebase origin/main
+  166  git add <resolved-files>
+  167  rm -rf .git
+  168  echo ".git removed — starting fresh history"
+  169  git init
+  170  git add .
+  171  git commit -m "Initial commit — clean start"
+  172  git remote add origin git@github.com:manjago85/QP1_BC.git
+  173  git branch -M main
+  174  git push -u --force origin main
+  175  sudo lshw -class memory
+  176  conda activate ds-env
+  177  jupyter notebook
+  178  conda activate ds-env
+  179  jupyter notebook
+  180  ls
+  181  pwd
+  182  cd Desktop
+  183  cd..
+  184  cd ..
+  185  cd -
+  186  xdd - open
+  187  xdg - open
+  188  xdg-open
+  189  man ls
+  190  cd Desktop/shell-lesson
+  191  pwd
+  192  mkdir firstdir
+  193  cd firstdir
+  194  pwd
+  195  cd ..
+  196  cd firstdir/
+  197  cd -
+  198  ls -lh
+  199  cat 829-0.txt
+  200  head 829-0.txt
+  201  less 829-0.txt
+  202  head 829-0.txt 33504-0.txt
+  203  head *.txt
+  204  mv 829-0.txt gulliver.txt
+  205  ls
+  206  cp gulliver.txt gulliver-backup.txt
+  207  mv firstdir/ backup
+  208  ls
+  209  mv gulliver-backup.txt backup
+  210  ls
+  211  cd backup
+  212  ls
+  213  cd -
+  214  history
+  215  history > history.txt
